@@ -6,7 +6,7 @@ import OrderInfo from "./OrderInfo";
 
 const ShoppingApp = () => {
   return (
-    <div>
+    <div className={styles.main_container}>
       <NavBar />
       <div className={styles.card_container}>
         {items.map((item) => (
