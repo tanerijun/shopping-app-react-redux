@@ -10,7 +10,7 @@ const ShoppingApp = () => {
       <NavBar />
       <div className={styles.card_container}>
         {items.map((item) => (
-          <ItemCard name={item.name} price={item.price} source={item.pic} />
+          <ItemCard key={item.id} item={item} />
         ))}
       </div>
       <OrderInfo />
