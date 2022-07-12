@@ -2,8 +2,8 @@ import styles from "./OrderInfo.module.css";
 import { useSelector } from "react-redux";
 
 const OrderInfo = () => {
-  const cart = useSelector((state) => state.cart);
-  const totalPrice = cart.itemsList.reduce(
+  const cart = useSelector((state) => state.cart.itemsList);
+  const totalPrice = cart.reduce(
     (total, item) => total + item.itemInfo.price * item.quantity,
     0
   );
