@@ -16,8 +16,17 @@ const cartSlice = createSlice({
         state.itemsList.push({ itemInfo: action.payload, quantity: 1 });
       }
     },
-    toggleShowCart: (state) => {
-      state.showCart = !state.showCart;
+    increaseQuantity: (state, action) => {
+      const item = state.itemsList.find(
+        (item) => item.itemInfo.id === action.payload.id
+      );
+      item.quantity++;
+    },
+    decreaseQuantity: (state, action) => {
+      const item = state.itemsList.find(
+        (item) => item.itemInfo.id === action.payload.id
+      );
+      item.quantity--;
     },
   },
 });

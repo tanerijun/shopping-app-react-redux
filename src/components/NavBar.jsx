@@ -3,7 +3,7 @@ import authSlice from "../store/authSlice";
 import styles from "./NavBar.module.css";
 import Cart from "./Cart";
 
-const NavBar = () => {
+const NavBar = ({ handleOpenModal }) => {
   const dispatch = useDispatch();
 
   const handleLogOut = () => {
@@ -15,7 +15,7 @@ const NavBar = () => {
       <h2 className={styles.logo} onClick={handleLogOut}>
         Redux Shopping
       </h2>
-      <Cart />
+      <Cart handleOpenModal={handleOpenModal} />
     </div>
   );
 };

@@ -1,0 +1,27 @@
+.detail_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.button_container {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.quantity_change_button {
+  border: none;
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: white;
+  background: skyblue;
+  border-radius: 50%;
+  font-weight: 900;
+  font-size: large;
+}
