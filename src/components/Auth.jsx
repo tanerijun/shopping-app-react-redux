@@ -21,15 +21,17 @@ const Auth = () => {
             id="username"
             name="username"
             className={styles.input}
+            required
           />
         </div>
         <div className={styles.form_section}>
           <label htmlFor="password">Password:</label>
           <input
-            type="text"
+            type="password"
             id="password"
             name="password"
             className={styles.input}
+            required
           />
         </div>
         <button type="submit" className={styles.submit_button}>
